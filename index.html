@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados y Municipios Mexicanos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bc3d0bf176.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-map-marked-alt"></i> Estados y Municipios Mexicanos</h1>
+        </header>
+        <section class="content">
+            <div class="select-container">
+                <label for="estadoSelect">Selecciona un estado:</label>
+                <select id="estadoSelect">
+                    <option value="">Selecciona un estado...</option>
+                    <!-- Options de estados se llenarán dinámicamente -->
+                </select>
+            </div>
+            <div class="municipios-container">
+                <h2><i class="fas fa-city"></i> Municipios</h2>
+                <ul id="municipiosList">
+                    <!-- Contenido de municipios será llenado dinámicamente -->
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

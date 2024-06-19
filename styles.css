@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333; /* Fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff; /* Título en color blanco */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select-container {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ddd; /* Color de etiqueta más claro */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Borde más oscuro */
+    border-radius: 4px;
+    background-color: #333; /* Fondo del select */
+    color: #fff; /* Texto blanco */
+}
+
+.municipios-container {
+    background-color: #444; /* Fondo de la sección de municipios */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.municipios-container h2 {
+    color: #fff; /* Título en color blanco */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.municipios-container h2 i {
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #fff; /* Color de enlaces blanco */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #66ccff; /* Color de enlaces al hacer hover */
+}
+
+/* Estilos para selección de texto */
+::selection {
+    background-color: #66ccff; /* Color de fondo de selección */
+    color: #fff; /* Color de texto de selección */
+}
+
+/* Estilos para el cursor */
+.select-container, .municipios-container {
+    cursor: pointer;
+}
+
+/* Gradientes */
+.container {
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+}
+
+.municipios-container {
+    background: linear-gradient(to bottom, #444, #333);
+}
+
+/* Media queries para hacer la página responsiva */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .content {
+        gap: 10px;
+    }
+}
